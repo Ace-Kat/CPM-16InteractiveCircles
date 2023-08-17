@@ -7,7 +7,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   superstructureTitle = new Title(width / 2, windowHeight / 15, "Superstructure");
-  baseTitle = new Title(width / 2, 10* windowHeight /15, "Base");
+  baseTitle = new Title(width / 2, 8 * windowHeight /15, "Base");
 
   // Create superstructure circles
   for (let i = 0; i < 5; i++) {
