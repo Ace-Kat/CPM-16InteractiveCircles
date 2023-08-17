@@ -111,7 +111,7 @@ class Circle {
 
   display() {
     noStroke();
-    fill(this.group === 'superstructure' ? 'blue' : 'green');
+    fill(this.group === 'superstructure' ? 'red' : 'blue');
     ellipse(this.x, this.y, this.r * 2);
     fill(255);
     textSize(12);
