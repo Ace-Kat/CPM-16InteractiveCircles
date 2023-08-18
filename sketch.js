@@ -174,7 +174,7 @@ class Window {
     }
 
     if (this.showCloseButton) {
-      this.displayCloseButton(130, 100); // Position close button at top left corner
+      this.displayCloseButton(160, 130); // Position close button at top left corner
     }
   }
 
@@ -209,8 +209,8 @@ class Title {
 
 function mousePressed() {
   for (let window of windows) {
-    if (window.showCloseButton && mouseX >= 130 && mouseX <= 190 &&
-        mouseY >= 100 && mouseY <= 130) {
+    if (window.showCloseButton && mouseX >= 160 && mouseX <= 220 &&
+        mouseY >= 130 && mouseY <= 160) {
       windows.pop();
       isClicked = true;
       redraw(); // Redraw the canvas after closing
