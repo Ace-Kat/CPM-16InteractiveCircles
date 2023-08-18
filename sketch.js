@@ -45,6 +45,7 @@ function setup() {
   circles[8].changeLabel('Who\'s the artist');
   circles[9].changeLabel('Venture Capital');
 
+  
 }
 
 function draw() {
@@ -171,7 +172,7 @@ class Window {
     }
 
     if (this.showCloseButton) {
-      this.displayCloseButton(30, 30); // Position close button at top left corner
+      this.displayCloseButton(130, 100); // Position close button at top left corner
     }
   }
 
@@ -206,8 +207,8 @@ class Title {
 
 function mousePressed() {
   for (let window of windows) {
-    if (window.showCloseButton && mouseX >= 30 && mouseX <= 90 &&
-        mouseY >= 30 && mouseY <= 60) {
+    if (window.showCloseButton && mouseX >= 130 && mouseX <= 190 &&
+        mouseY >= 100 && mouseY <= 130) {
       windows.pop();
       redraw(); // Redraw the canvas after closing
       break;
